@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <href="stylepage2.css">
+    <title>Обучение JavaScript</title>
+
+    <style>
+        body {
+          background-image: url("./public/lilac-sidelight-background.jpg");
+        }
+        </style>
+</head>
+<body>
+
+    <h1>Привет! Давай учиться JavaScript!</h1>
+    <p>JavaScript – это язык программирования, который используют разработчики для создания интерактивных веб-страниц. Функции JavaScript могут улучшить удобство взаимодействия пользователя с веб-сайтом: от обновления ленты новостей в социальных сетях и до отображения анимации и интерактивных карт.</p>
+    <button onclick="sayHello()">Нажми на меня!</button>
+
+    <script>
+        function sayHello() {
+            alert('Привет!');
+        }
+    </script>
+    <h1>Что может JavaScript?</h1>
+    <p>JavaScript может изменять значения атрибутов HTML.В этом случае JavaScript изменяет значение атрибута src (источник) изображения.</p>
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Включи свет</button>
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Выключи свет</button>
+    
+<h1>Дата и время JavaScript</h1>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Нажмите, чтобы показать дату и время.</button>
+<p id="demo"></p>
+
+    
+    <h2>Основные элементы:</h2>
+    <ul>
+        <li><strong>&lt;h1&gt;</strong> - Заголовок первого уровня</li>
+        <li><strong>&lt;p&gt;</strong> - Параграф текста</li>
+        <li><strong>&lt;a&gt;</strong> - Ссылка на другой ресурс</li>
+        <li><strong>&lt;img&gt;</strong> - Изображение</li>
+    </ul>
+
+    <h2>Пример ссылки:</h2>
+    <a href="https://www.livelib.ru/">Перейти на сайт про книги</a>
+    <h2>Пример изображения:</h2>
+    <img src="./public/err8qs3qjk3fznfekkahkydyxz8.png" alt="Пример изображения">
+    <h3>Пример программы для этого сайта:</h3>
+</body>
+</html>

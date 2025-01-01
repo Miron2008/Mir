@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylepage2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обучение CSS</title>
+</head>
+<body>
+    <h1>Добро пожаловать в обучение CSS !</h1>
+    <p>CSS — это язык описания внешнего вида документа, то есть он отвечает за то, как выглядят веб-страницы: цвет фона и декоративных элементов, размер и стиль шрифтов. Термин расшифровывается как Cascading Style Sheets (каскадные таблицы стилей)</p>
+    <p>Этот текст демонстрирует использование CSS для стилизации HTML.</p>
+    <div class="button" onclick="showMessage()">Нажми меня!</div>
+
+    <script>
+        function showMessage() {
+            alert("Кнопка была нажата!");
+        }
+    </script>
+    <div class="table">
+        <div class="row">
+            <div class="header">Основные элементы</div>
+        
+        </div>
+        <div class="row">
+            <div class="cell"><strong>&lt;h1&gt;</strong></div>
+            <div class="cell">Заголовок первого уровня</div>
+    
+        </div>
+        <div class="row">
+            <div class="cell"><strong>&lt;p&gt;</strong></div>
+            <div class="cell">Параграф текста</div>
+        </div>
+        <div class="row">
+            <div class="cell"><strong>&lt;a&gt;</strong></div>
+            <div class="cell">Ссылка на другой ресурс</div>
+        </div>
+        <div class="row">
+            <div class="cell"><strong>&lt;img&gt;</strong></div>
+            <div class="cell">Изображение</div>
+        </div>
+    </div>
+    <h2>Пример ссылки:</h2>
+    <a href="https://prixoxo.ru/12326-jeto-kruto-klassnye-foto.html">Перейти на сайт про мемы</a>
+
+    <h2>Пример изображения:</h2>
+    <img src="./public/prixoxo.ru_jeto-kruto-klassnye-foto-3.jpg" alt="Пример изображения">
+    <h3>Пример программы для этого сайта:</h3>
+    <code>
+        &lt;!DOCTYPE html&gt;//Тип документа для браузера <br/>
+        &lt;html lang="ru"&gt;//Самый главный тег<br/>
+        &lt;head&gt;//содержит метаинформацию о HTML-странице.<br/>
+            <div style="margin-left: 15px;">&lt;meta charset="UTF-8"&gt;//Кодировка страницы</div>
+            <div style="margin-left: 15px;">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;//Для красивого отображения на мобильных устройствах</div>
+            <div style="margin-left: 15px;">&lt;title&gt;Обучение CSS&lt;/title&gt;//название страницы.</div>
+            <div style="margin-left: 15px;">&lt;link rel="stylesheet" href="style2.css"&gt;</div>
+        &lt;/head&gt;<br/>
+        &lt;body&gt;//определяет тело документа и является контейнером для всего видимого содержимого, такого как заголовки, абзацы, изображения, гиперссылки, таблицы, списки и т. д.<br/>
+
+            <div style="margin-left: 15px;">&lt;h1&gt;Добро пожаловать в обучение CSS !&lt;/h1&gt;//определяет большой заголовок.<br/></div>
+            <div style="margin-left: 15px;">&lt;p&gt;CSS — это язык описания внешнего вида документа, то есть он отвечает за то, как выглядят веб-страницы: цвет фона и декоративных элементов, размер и стиль шрифтов. Термин расшифровывается как Cascading Style Sheets (каскадные таблицы стилей)&lt;/p&gt;</div>
+            <div style="margin-left: 15px;">&lt;p&gt;Этот текст демонстрирует использование CSS для стилизации HTML.&lt;/p&gt;</div>
+            <div style="margin-left: 15px;">&lt;div class="button" onclick="showMessage()"&gt;Нажми меня!&lt;/div&gt;</div>
+            <div style="margin-left: 15px;">&lt;script&gt;
+                <div style="margin-left: 15px;">function showMessage() {</div>
+                <div style="margin-left: 15px;">alert("Кнопка была нажата!");</div>
+                <div style="margin-left: 15px;">}</div>
+            <div style="margin-left: 15px;">&lt;/script&gt;</div>
+        
+            <div style="margin-left: 15px;">&lt;div class="table"&gt;</div>
+                    <div style="margin-left: 15px;">&lt;div class="row"&gt;</div>
+                    <div style="margin-left: 15px;">&lt;div class="header"&gt;Основные элементы&lt;div&gt;</div>
+                
+                <div style="margin-left: 15px;">&lt;/div&gt;</div>
+                <div class="row">
+                    <div class="cell"><strong>&lt;h1&gt;</strong></div>
+                    <div class="cell">Заголовок первого уровня</div>
+            
+                </div>
+                <div class="row">
+                    <div class="cell"><strong>&lt;p&gt;</strong></div>
+                    <div class="cell">Параграф текста</div>
+                </div>
+                <div class="row">
+                    <div class="cell"><strong>&lt;a&gt;</strong></div>
+                    <div class="cell">Ссылка на другой ресурс</div>
+                </div>
+                <div class="row">
+                    <div class="cell"><strong>&lt;img&gt;</strong></div>
+                    <div class="cell">Изображение</div>
+                </div>
+            </div>
+
+            <div style="margin-left: 15px;">&lt;h2&gt;Пример ссылки:&lt;/h2&gt;<br/></div>
+            <div style="margin-left: 15px;">&lt;a href="https://www.livelib.ru/"</a>&gt;Перейти на сайт про книги&lt;/a&gt;задаёт адрес документа, на который следует перейти.</div>
+
+            <div style="margin-left: 15px;">&lt;h2&gt;Пример изображения:&lt;/h2&gt;<br/></div>
+            <div style="margin-left: 15px;">&lt;img src="./public/8zspordb4iqkyqkhmc8mtjbtjne.png" alt="Пример изображения"&gt;//определяет местонахождение (URL) изображения.</div>
+            <div style="margin-left: 15px;">&lt;h3&gt;Пример программы для этого сайта:&lt;/h3&gt;<br/></div>
+
+        &lt;/body&gt;<br/>
+        &lt;/html&gt;<br/>
+
+    </code>
+</body>
+</head>
+</html>
