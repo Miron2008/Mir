@@ -25,7 +25,6 @@
   --transition-fastest: 0.1s;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -59,12 +58,9 @@ p {
 /*Navigation*/
 
 .navigation {
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-  top: 0px;
-  height: 50px;
+  height: auto; /* Убирает фиксированную высоту */
 }
+
 
 .nav-container {
   margin: 0 auto;
@@ -246,34 +242,6 @@ p {
   width: max-content;
 }
 
-/*Numbers*/
-
-.numbers {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.numbers .container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.numbers .container .text {
-  text-align: center;
-  color: var(--nav-link-color);
-  font-size: var(--font-large);
-}
-
-.numbers h2 {
-  font-size: var(--font-3x-large);
-  color: var(--nav-link-color);
-}
-
-.numbers .container .text .number {
-  font-size: var(--font-3x-large);
-}
 
 /*Services*/
 .services {
@@ -724,9 +692,7 @@ header {
     padding: 15px;
     text-align: center;
 }
-main {
-    padding: 20px;
-}
+
 nav {
     margin: 20px ;
 }
@@ -797,3 +763,25 @@ h5 {
 .hero1 .text .post-title {
   font-size: xx-large;
 }
+.highlight:hover {
+  background-color: yellow; /* Цвет подсветки */
+  cursor: pointer;          /* Изменяем курсор на указатель */
+}
+.card2{
+  display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+gap: 1px;
+height: 100px;
+
+}
+.card3{
+  display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+gap: 1px;
+height: 150px;
+
+}
+
+

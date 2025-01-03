@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>CraftedWebs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+      <div class="navigation w3-highway-green w3-container">
+        <nav class="nav-container w3-padding-large">
+          <div class="logo">
+            <a href="#home" >СОЗДАНИЕ<span>САЙТА</span></a>
+          </div>
+          <div class="mobile-button">
+            <span style="float: right;" onclick="toggleMobileNavigation()">&#9776;</span>
+          </div>
+          <div class="links">
+            <a href="#about" >О НАС</a>
+            <a href="#services" >УСЛУГИ</a>
+            <a href="#contact" >КОНТАКТЫ</a>            
+          </div>
+          <div id="mobile-sidenav" class="mobile-links w3-highway-green">
+            <div class="mobile-logo" style="display: inline;">
+              <a href="#home" class="logo">СОЗДАНИЕ<span>САЙТА</span></a>
+              <span style="width: 100%;"></span>
+              <a href="javascript:void(0)" class="closebtn" onclick="toggleMobileNavigation()">&times;</a>
+            </div>
+            <a href="#about" onclick="toggleMobileNavigation()">О НАС</a>
+            <a href="#services" onclick="toggleMobileNavigation()">НАШИ УСЛУГИ</a>
+            <a href="#contact" onclick="toggleMobileNavigation()">КОНТАКТЫ</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="hero" id="home">
+        <div class="text container">
+          <p class="pre-title">Одна остановка для разработки сайта</p>
+          <h1 class="title"> СОЗДАНИЕ<span>САЙТА</span></h1>
+          <p class="post-title">Общайтесь с остальным миром!</p>
+          <a class="w3-button w3-round-large w3-indigo w3-hover-green" href="./index2.html">ПРИСТУПИТЬ К ОБУЧЕНИЮ</a> 
+        </div>
+      </div>
+
+      <div class="about container w3-padding-large" id="about">
+        <div class="text-one">
+          <h2>О нас</h2>
+          <p>В наше время все пользуются интернетом и, чтобы добыть данную информацию на тот или иной вопрос, люди обращаются к сайтам. На сайтах написана подробная информация на это вопрос, однако немногие люди умеют создавать сайты, а множество курсов, обучающие этому - платныею Благодаря моему курсу начинающие программисты смогут изучить HTML, CSS, JavaScript. бесплатно и быстро.</p>
+        </div>
+    
+      </div>
+
+      <div class="services container" id="services">
+        <h2 class="w3-center">Наши услуги</h2>
+        <div class="cards w3-padding-large w3-margin-top">
+          <div class="card w3-card-2 w3-padding-large w3-border w3-border-blue w3-round-large">
+            <h3>ВЕБ-РАЗРАБОТКА</h3>
+            <div class="card-text">
+              <p>Мы научим вас создавать свои сайты. </p>
+            </div>
+          </div>
+          <div class="card w3-card-2 w3-padding-large w3-border w3-border-blue w3-round-large">
+            <h3>КОНСУЛЬТАЦИЯ</h3>
+            <div class="card-text">
+              <p>Мы предлагаем <span class="">бесплатную</span> консультацию по вашей идее и предлагаем наилучший подход к ее реализации.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact container" id="contact">
+        <div class="short-contact">
+          <h2>Контакты</h2>
+          <p class="w3-xlarge">Ваше мнение важно для нас!</p>
+          <div class="w3-large w3-margin-top contact-info">
+            <i class="fa fa-envelope-o"></i><span style="margin-left:0px;"><a href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%3Ftab%3Drm%26ogbl&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%3Ftab%3Drm%26ogbl&osid=1&passive=1209600&service=mail&ifkv=AeZLP9_tmNz_mg2owpBagUW6ntUjylH_TV_GHHAkLxkZzwfeKf1YQRRRPtzkBCr2P73XUKwoFC-gFw&ddm=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">vojtsekhovskij.m@sch2009.net</a></span><br>
+            <i class="fa fa-phone"></i><span style="margin-left:10px;"><a href="+7 999 551 19 01"></a>+7 999 551 19 01</span><br>
+          </div>
+        </div>
+        <div class="form w3-margin-top">
+          <div class="container w3-round-xlarge">
+            <form class="w3-highway-green w3-padding-large w3-round-large">
+              <label for="fname">ИМЯ</label>
+              <input type="text" id="name" name="name" placeholder="Ваше имя">
+
+              <label for="lname">ПОЧТА</label>
+              <input type="text" id="email" name="email" placeholder="Ваша почта">
+
+              <label for="subject">ПИСЬМО</label>
+              <textarea id="subject" name="subject" placeholder="Напишите что думаете о нас....." style="height:200px"></textarea>
+            
+              <input class="w3-metro-blue" type="submit" value="Отправить">
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer>
+        
+        <div class=" w3-highway-green w3-padding-large" id="footer">
+          <p> RTUILab, 2024</p>
+          <p>Все материалы, ссылки, IP, Товарные знаки использованы исключительно в образователных целях, без каких либо выгоды включая образовательных.</p>
+          <p class="w3-center logo">© 2024 - СОЗДАНИЕ<span>САЙТА</span> - Все права защищены</p>
+        </div>
+    </footer>
+
+  <script>
+    function toggleMobileNavigation() {
+      const mobileNavigation = document.getElementById("mobile-sidenav");
+      mobileNavigation.classList.toggle('mobile-links-active');
+    }
+</script>
+  </body>
+</html>
