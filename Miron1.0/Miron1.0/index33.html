@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видимый Код</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        pre {
+            background: #2e2e2e; 
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 5px;
+            overflow: auto; 
+            white-space: pre-wrap;
+        }
+        code {
+            font-family: 'Courier New', monospace; 
+        }
+        .colored-line {
+            color: rgb(30, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Код на этот сайт</h1>
+    <p>Мы будем работать с <a href="https://spaces.w3schools.com/" target="_blank" span class="highlight">шаблоном w3schools,</a> где его взять и как работать смотрите <a href="C:\Users\voimi\Videos\Desktop\Видео без названия — сделано в Clipchamp.mp4" target="_blank" span class="highlight">тут!</a> Так же ели вы хотите что то сами добавить в код но не знаете как воспользуйтесь библиотекой <a href="https://www.w3schools.com/" target="_blank" span class="highlight">w3schools.</a></span></p>
+    <pre><code>
+    &lt;!DOCTYPE html>
+    &lt;html>
+    &lt;head>
+    &lt;title>Ресторан&lt;/title>
+    &lt;meta charset="UTF-8">
+    &lt;link rel="stylesheet" href="style3.css">
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+    &lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    &lt;style>
+            body,
+            html {
+                height: 100%
+            }
+
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family:'Times New Roman', Times, serif
+            }
+
+
+            .bgimg {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url("https://kartinki.pics/uploads/posts/2021-04/1617313863_47-p-foni-dlya-menyu-56.jpg");
+                min-height: 20%;
+            }
+            h7{
+                color: rgb(0, 183, 255);
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+            }
+        &lt;/style>
+    &lt;/head>
+    &lt;body>
+    <p class="colored-line">&lt;!-- Навигационная панель (расположена сверху) --></p>
+
+    &lt;div class="w3-top w3-hide-small">
+        div class="w3-bar w3-xlarge w3-black " id="myNavbar">
+        &lt;a href="#" class="w3-bar-item w3-center">ГЛАВНАЯ&lt;/a>
+        &lt;a href="#menu" class="w3-bar-item w3-center">МЕНЮ&lt;/a>
+        &lt;a href="#about" class="w3-bar-item w3-center">О НАС&lt;/a>
+        &lt;a href="#myMap" class="w3-bar-item w3-center">КОНТАКТЫ&lt;/a>
+        &lt;/div>
+        &lt;/div>
+        <p class="colored-line">&lt;!-- Шапка с изображением --></p>
+        &lt;header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        &lt;div class="w3-display-bottomleft w3-padding">
+        &lt;/div>
+        &lt;div class="w3-display-middle w3-center">
+        &lt;h7 class="w3-center w3-jumbo" style="font-size:100px"> Пицца и Радость&lt;/h7>
+        &lt;/div>
+    &lt;/header>
+    <p class="colored-line">&lt;!-- Меню контейнер --></p>
+    &lt;div class="w3-container w3-grey w3-grayscale w3-xlarge  w3-padding-64 w3-xxlarge" id="menu">
+    &lt;div class="w3-content">
+
+    &lt;h1 class="w3-center w3-jumbo" style="margin-bottom:64px">МЕНЮ&lt;/h1>
+            &lt;div class="w3-row w3-center w3-border w3-border-black">
+            &lt;a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+                &lt;div class="w3-col s4 tablink w3-padding-large w3-hover-black">Пицца (40см)/div>
+                    &lt;/a>
+                &lt;a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+                &lt;div class="w3-col s4 tablink w3-padding-large w3-hover-black">Салаты (200гр)&lt;/div>
+                    &lt;/a>
+                &lt;a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+                &lt;div class="w3-col s4 tablink w3-padding-large w3-hover-black">Супы (250мл)&lt;/div>
+                    &lt;/a>
+                &lt;/div>
+
+            &lt;div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+            &lt;h1>b>Маргарита/b> &lt;span class="w3-right w3-tag w3-dark-grey w3-round">458р&lt;/span>&lt;/h1>
+                &lt;p class="w3-text-grey">сыр моцарелла, спелые помидоры и листья свежего базилика&lt;/p>
+                &lt;hr>
+
+                &lt;h1>&lt;b>4 сыра&lt;/b> &lt;span class="w3-right w3-tag w3-dark-grey w3-round">445р&lt;/span>&lt;/h1>
+                &lt;p class="w3-text-grey"> Моцарелла (мягкий сыр), Пармезан (твердый сыр), Эмменталь (ароматный пряный сыр) и Горгонзола (голубой сыр)&lt;/p>
+                &lt;hr>
+
+                &lt;h1>&lt;b>С курицой&lt;/b> &lt;span class="w3-right w3-tag w3-dark-grey w3-round">500р&lt;/span>&lt;/h1>
+                &lt;p class="w3-text-grey">Соль с травами, помидоры, куриное филе, твердый сыр&lt;/p>
+                &lt;hr>
+
+            
+                &lt;h1>&lt;b>Мясная&lt;/b> &lt;span class="w3-tag w3-red w3-round">&lt;/span>&lt;span>
+                        class="w3-right w3-tag w3-dark-grey w3-round">600р&lt;/span>&lt;/h1>
+                    &lt;p class="w3-text-grey">сыр, грибы, ветчина, окорок, бекон, помидор, соус&lt;/p>
+                    &lt;hr>
+
+    
+                    &lt;/div>
+
+                    &lt;div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+                    &lt;h1>&lt;b>Оливье&lt;/b> span class="w3-tag w3-grey w3-round">&lt;/span> &lt;span>
+                        class="w3-right w3-tag w3-dark-grey w3-round">564р&lt;/span>&lt;/h1>
+                    &lt;p class="w3-text-grey">	
+                    картофель, майонез, консервированный горошек, мясо, морковь, огурец, морковь, крутое яйцо, солёные огурцы, колбаса, репчатый лук&lt;/p>
+                    &lt;hr>
+
+                &lt;h1>&lt;b>Цезарь&lt;/b> &lt;span class="w3-right w3-tag w3-dark-grey w3-round">345р&lt;/span>&lt;/h1>
+                &lt;p class="w3-text-grey">курочка и сухарики в сочетании с листьями салата и пармезаном плюс оригинальный соус&lt;/p>
+                &lt;hr>
+
+                &lt;h1>&lt;b>Селёдка под шубой/b>&lt; span class="w3-right w3-tag w3-dark-grey w3-round">674р&lt;/span>&lt;/h1>
+                &lt;p class="w3-text-grey">Сельдь солёная, свёкла, картофель, морковь, лук репчатый, яйца, майонез&lt;/p>
+                &lt;hr>
+
+                &lt;h1>&lt;b>Овощной&lt;/b> &lt;span class="w3-right w3-tag w3-dark-grey w3-round">584р&lt;/span>&lt;/h1>
+                &lt;p class="w3-text-grey">Огурцы, помидоры, брокколи, перец, капуста, зелень.&lt;/p>
+                &lt;/div>
+
+
+            &lt;div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+            &lt;h1>&lt;b>Борщ&lt;/b> &lt;span class="w3-tag w3-grey w3-round">&lt;/span>&lt;span>
+                        class="w3-right w3-tag w3-dark-grey w3-round">550р&lt;/span>&lt;/h1>
+                        &lt;p class="w3-text-grey"> Картофель, капуста, моркова, лук, петрушка, укропа, свёкла&lt;/p>
+                        &lt;hr>
+
+                &lt;h1>&lt;b>Грибной&lt;/b>&lt; span class="w3-right w3-tag w3-dark-grey w3-round">600р&lt;/span>&lt;/h1>
+                &lt;p class="w3-text-grey">Грибы белые, лук репчатый, морковь, масло подсолнечное, картофель, вермишель&lt;/p>
+                &lt;hr>
+
+                &lt;h1>&lt;b>С лапшой/b>&lt; span class="w3-right w3-tag w3-dark-grey w3-round">400р&lt;/span>&lt;/h1>
+                &lt;p class="w3-text-grey">Курица суповая, лапша пшеничная, картофель, морковь, лук репчатый&lt;/p>
+                &lt;hr>
+
+            
+                &lt;/div>&lt;br>
+
+            &lt;/div>
+        &lt;/div>
+        <p class="colored-line">&lt;!-- О контейнере --></p>
+    &lt;div class="w3-container w3-padding-64 w3-green w3-grayscale w3-xlarge" id="about">
+    &lt;div class="w3-content">
+        &lt;h1 class="w3-center w3-jumbo" style="margin-bottom:64px">О НАС&lt;/h1>
+        &lt;p>На нашем сайте мы предлагаем вкусные и свежие пиццы, приготовленные с любовью и качественными ингредиентами. Наша команда состоит из опытных поваров, которые следят за высоким стандартом изготовления каждой пиццы.
+
+                Мы открыли наши двери, чтобы делиться страстью к итальянской кухне с вами. У нас есть широкий ассортимент пицц на любой вкус: от классической маргариты до экзотических сочетаний. Мы также предлагаем вегетарианские и безглютеновые варианты!
+                
+                Мы стремимся к быстрому и комфортному обслуживанию, чтобы каждый заказ приносил радость. Заказывайте онлайн, и мы доставим вашу любимую пиццу прямо к двери.
+                
+                Спасибо, что выбрали нас! Мы уверены, что наши пиццы станут вашим любимым лакомством.&lt;/p>
+                &lt;img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/1d/f8/db/caption.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom"
+                alt="Restaurant">
+                &lt;h1>&lt;b>Расписание&lt;/b>&lt;/h1>
+
+            &lt;div class="w3-row">
+            &lt;div class="w3-col s6">
+                &lt;p>Понедельник-Пятница&lt;/p>
+                    &lt;p>8-22&lt;/p>
+                  
+                    &lt;/div>
+                &lt;div class="w3-col s6">
+                &lt;p>Суббота-Воскресение&lt;/p>
+                    &lt;p>8-20/p>
+                    
+                    &lt;/div>
+                &lt;/div>
+
+            &lt;/div>
+        &lt;/div>
+        <p class="colored-line">&lt;!-- Контакты --></p>
+    &lt;div class="w3-container w3-padding-64  w3-grayscale-min w3-xlarge" id="myMap">
+    &lt;div class="w3-content">
+        &lt;h1 class="w3-center w3-jumbo" style="margin-bottom:64px">КОНТАКТЫ&lt;/h1>
+            &lt;p>Позвоните нам по номеру +x xxx xxx xx xx&lt;/p>
+            &lt;p class="w3-xxlarge">strong>Забронируйте/strong> столик, или просто отправьте нам сообщение: по номеру +x xxx xxx xx xx
+            &lt;/p>
+
+        &lt;/div>
+        &lt;/div>
+        <p class="colored-line">&lt;!-- Здесь размещена кнопка которая переводит вас на страницу с кодом --></p>
+    &lt;footer class="w3-container w3-teal w3-center w3-margin-top">
+    &lt;p>&lt;/p>
+     a class="w3-button w3-round-xxlarge w3-small w3-light-grey w3-margin-bottom" href="index33.html" target="_blank">Как сделать такой же сайт&lt;/a> 
+     &lt;/footer>
+
+    &lt;script>
+    <p class="colored-line">&lt;!--Меню с вкладками--></p>
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-red";
+        }
+        document.getElementById("myLink").click();
+    &lt;/script>
+    &lt;/body>
+    &lt;/html>
+</code></pre>
+</body>
+</html>
